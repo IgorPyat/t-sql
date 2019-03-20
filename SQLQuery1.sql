@@ -13,7 +13,7 @@ declare @plod float
 declare @plp float
 declare @pl float
 set @a = 2
-set @pd = 10000.00
+set @pd = 10000.001
 while @a <= (select max(id) from test)
 begin
 	set @b = (select dateadd(month,@c,(getdate())))
